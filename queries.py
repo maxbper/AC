@@ -39,5 +39,23 @@ def box_plot_for_each_column(dataset):
         plt.title("Boxplot for all numeric columns")
         plt.xticks(rotation=45)  # Rotation in x, if necessary
         plt.show()
-    
+        
+def bar_chart_for_each_column(dataset):
+    non_numeric_columns = dataset.select_dtypes(exclude='number')
+
+    if non_numeric_columns.empty:
+        print("Any no numeric columns found in the dataset.")
+    else:
+      for column in non_numeric_columns.columns:
+          value_counts = non_numeric_columns[column].value_counts()
+
+          plt.figure(figsize=(10, 6))
+          value_counts.plot(kind='bar')
+          plt.title(f"Bar chart for '{column}'")
+          plt.xlabel(column)
+          plt.ylabel("Count")
+          plt.xticks(rotation=45)
+          plt.tight_layout()  # Adjust layout to prevent overlap
+          plt.show()
+      
     

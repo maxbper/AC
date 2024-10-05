@@ -19,6 +19,9 @@ try:
     
     #Box-plot for all numeric columns
     q.box_plot_for_each_column(file)
+    
+    #Bar-chart for all numeric columns
+    q.bar_chart_for_each_column(file)
 
 except FileNotFoundError:
     print("File not found.")
