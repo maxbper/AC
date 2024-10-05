@@ -6,24 +6,32 @@ import matplotlib.pyplot as plt
 def read_dataset(path):
     file = pd.read_csv(path)
     
-    print("..........Dataset:..........")
+    print("..........Dataset..........")
     print(file) 
     return file
 
 # Calculate the mean for each column
 def mean_for_each_column(dataset):
-    print("..........Mean for each column:..........")
+    print("..........Mean for each column..........")
     print(str(dataset.mean(numeric_only=True))+"\n")
 
 # Calculate the median for each column
 def median_for_each_column(dataset):
-    print("..........Median for each column:..........")
+    print("..........Median for each column..........")
     print(str(dataset.median(numeric_only=True))+"\n")
 
 # Calculate the mode for each column
 def mode_for_each_column(dataset):
-    print("..........Mode for each column:..........")
+    print("..........Mode for each column..........")
     print(str(dataset.mode().iloc[0]) + "\n")
+    
+# Calculate the % of missing values for each column
+def missing_value_percentage_for_each_column(dataset):
+    total = dataset.shape[0]  # Number of lines
+    missing_values = dataset.isnull().sum()  # Sum of the missing values in each column
+    percentage = (missing_values / total) * 100  # Calculate the percentage of missing values in each column
+    print("..........% of missing values..........")
+    print(percentage)
 
 #Box-plot for each column
 def box_plot_for_each_column(dataset):
