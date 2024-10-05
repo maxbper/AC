@@ -16,6 +16,9 @@ try:
     q.mean_for_each_column(file)
     q.median_for_each_column(file)
     q.mode_for_each_column(file)
+    
+    #Box-plot for all numeric columns
+    q.box_plot_for_each_column(file)
 
 except FileNotFoundError:
     print("File not found.")
