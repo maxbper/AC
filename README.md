@@ -5,6 +5,7 @@ Normalizar - scaling and standazdization -- Usar se usarmos KNN algotitmos
 # Edu
 Tirar colunas
 Graficos circulares
+Tirar linhas
 
 # Máximou
 Outlier aproximar acima e abaixo
