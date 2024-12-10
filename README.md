@@ -3,3 +3,6 @@
 - Nao usar apenas os 5 jogadores para fazer a visao da equipa, usar todos
 - Usar para treino todos os anos execeto o ultimo
 - Usar os 4 melhores de uma confID e os 4 melhores da outra com 1 e o resto 0
+
+---
+- Usamos 9 jogadores para melhorar
