@@ -6,3 +6,4 @@
 
 ---
 - Usamos 9 jogadores para melhorar
+- Mudar o numero de layers e neuronios ocultos de 100-50 para 800-400
