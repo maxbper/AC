@@ -7,5 +7,5 @@
 ---
 - Usamos 9 jogadores para melhorar
 - Mudar o numero de layers e neuronios ocultos de 100-50 para 800-400
-- Tentamos fazer ponderado com valores acima de 0.75 dos valores selecionados, multiplicar por 2 (nada de jeito tambem)
+- Tentamos fazer valores ponderados para as colunas
 - Tentamos difernetes otimizadores nas redes neuronais (nada de jeito)
